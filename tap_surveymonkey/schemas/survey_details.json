@@ -3,7 +3,10 @@
   "additionalProperties": false,
   "properties": {
     "quiz_options": {
-      "type": ["object","null"],
+      "type": [
+        "object",
+        "null"
+      ],
       "additionalProperties": true,
       "properties": {
         "show_results_type": {
@@ -95,11 +98,6 @@
     },
     "folder_id": {
       "type": "string"
-    },
-    "custom_variables": {
-      "type": "object",
-      "additionalProperties": true,
-      "properties": {}
     },
     "nickname": {
       "type": "string"

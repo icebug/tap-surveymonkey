@@ -8,11 +8,6 @@
         "href": {
             "type": "string"
         },
-        "custom_variables": {
-            "type": "object",
-            "additionalProperties": true,
-            "properties": {}
-        },
         "first_name": {
             "type": "string"
         },
@@ -22,18 +17,14 @@
         "email_address": {
             "type": "string"
         },
-        "ip_address": {
-            "type": "string"
-        },
         "id": {
             "type": "string"
         },
-        "logic_path": {
-            "type": "object",
-            "additionalProperties": true,
-            "properties": {}
-        },
         "date_modified": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "extraction_date": {
             "type": "string",
             "format": "date-time"
         },
@@ -124,14 +115,6 @@
                                             },
                                             "score": {
                                                 "type": "integer"
-                                            },
-                                            "tag_data": {
-                                                "type": "array",
-                                                "items": {
-                                                    "type": "object",
-                                                    "additionalProperties": true,
-                                                    "properties": {}
-                                                }
                                             }
                                         },
                                         "title": "Answer"
@@ -170,7 +153,10 @@
             }
         },
         "quiz_results": {
-            "type": ["object","null"],
+            "type": [
+                "object",
+                "null"
+            ],
             "additionalProperties": true,
             "properties": {
                 "correct": {
@@ -225,11 +211,6 @@
         },
         "edit_url": {
             "type": "string"
-        },
-        "metadata": {
-            "type": "object",
-            "additionalProperties": true,
-            "properties": {}
         }
     },
     "required": [
